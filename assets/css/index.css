@@ -144,7 +144,7 @@ span.typed-cursor {
 .project__section {
   margin: 5rem 0;
 }
-#section h1 {
+.project__heading {
   font-size: 20px;
 margin-left: 7rem;
 font-weight: 300;
