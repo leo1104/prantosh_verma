@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ <!--====================== TYPED JS ====================-->
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- ========================iconscout===================== -->
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <link href="/assets/css/pointer.css" rel="stylesheet">
+    
+    <!-- ========================CSS============================ -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+
+    <title>Prantosh Portfolio</title>
+</head>
+<body>
+
+    <!-- =============================HEADERS========================= -->
+    <div class="home__bg">
+    <header>
+        <nav class="menu" id="nav-menu">
+            <i class="uil uil-times-circle" id="nav-close"></i>
+            <ul >
+                <li class="menu_i"><span class="menu_i_tx"> <a href=""> Home</a></span></li>
+                <li class="menu_i"><span class="menu_i_tx"><a href=""> Projects</a></span></li>
+              <li class="menu_i"><span class="menu_i_tx"><a href="" class="open-link"> Contact</a></span></li>
+              
+            </ul>
+        </nav>
+        <div class="nav__open" id="nav-open" > 
+            <i class="uil uil-bars"></i>
+        </div>
+        
+    </header>
+<!-- ====================================Home============================= -->
+    <section id="section">
+        
+        <div class="home">
+        <div class="home__content">
+            <h1>Prantosh Verma</h1>
+            <h3 >
+                <span class="type"></span>
+                <span class="typed-cursor">_</span>
+            </h3>
+            
+        <h4>Explore More <i class="uil uil-arrow-right"></i></h4>
+        </div>
+        
+            <img src="assets/img/1.svg" alt="">
+        
+    </div>
+    </section>
+</div>
+
+
+<script>
+    var typed = new Typed('.type', {
+        strings: ['Full Stack Development', 'Machine Learning'],
+        typeSpeed: 70,
+        backSpeed: 50,
+        startDelay: 0,
+        backDelay: 2000,
+        loop: true,
+        showCursor: false
+    });
+</script>
+    <script src="assets/js/index.js"></script>
+    <script src="/assets/js/pointer.js"></script>
+<script>
+    init_pointer({
+        pointerColor:"#5E5CDA",
+        ringSize: 15, // Pixels
+	ringClickSize: 10
+    });
+</script>
+</body>
+</html>

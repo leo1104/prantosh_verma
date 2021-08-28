@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.menu {
+  position: fixed;
+  display: block;
+  padding: 0.5rem 2rem;
+  left: -100%;
+  transition: 0.3s ease;
+background-color: white;
+height: 100%;
+}
+
+.menu_i {
+  display: block;
+  overflow: hidden;
+  width: 25px;
+  line-height: 25px;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+.menu_i_tx {
+  display: inline-block;
+  vertical-align: top;
+  transform: translate(0, 100%) rotate(-90deg);
+  transform-origin: 0 0;
+  white-space: nowrap;
+}
+
+.menu_i_tx:after {
+  content: "";
+  float: left;
+  margin-top: 100%;
+}
+nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.nav__open {
+  padding: 2rem;
+  cursor: pointer;
+}
+.uil-times-circle {
+  font-size: 2rem;
+  cursor: pointer;
+color: #5E5CDA;
+padding-top: 2rem;
+}
+.uil-bars {
+  font-size: 2rem;
+}
+
+.show-menu {
+  left: 0;
+}
+.nun {
+  display: none;
+}
+
+nav ul li a {
+  position: relative;
+}
+nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 24px;
+  left: 0;
+  background: #2d6ae3;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+ul{
+    position: relative;
+margin-top: 11rem;    
+}
+
+section {
+  transition: margin-left 0.5s;
+}
+.open-link{
+    margin-left: 3.5rem;
+}
+/* =======================Home===================  */
+.home__bg{
+    background: linear-gradient(90deg, #E5FCFF 60%, #ABDAFC 60%);
+}
+.home {
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  
+}
+.home__content h1{
+font-size: 50px;
+font-weight: 700;
+color: #5E5CDA;
+}
+.home__content h3{
+    font-size: 30px;
+font-weight: 600;
+}
+.home__content h4{
+    font-size: 20px;
+font-weight: 300;
+}
+img {
+  width: 339px;
+    
+}
+img:hover{
+    transform: translate3d(8px,2px,2px);
+}
+span.typed-cursor {
+    animation: blink 0.7s infinite;
+  }
+@keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
