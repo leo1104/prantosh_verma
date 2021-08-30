@@ -197,6 +197,7 @@ line-height: 22.5px;
 
 
 /* Skills and Eduction */
+
 .skills__section{
   text-align: center ;
 }
@@ -214,12 +215,18 @@ line-height: 22.5px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  
   transition: 0.3s;
   font-size: 17px;
   font-size: 20px ;
 }
 
+.tab1{
+  padding: 14px 224px 14px 130px;
+}
+.tab2{
+  padding: 14px 130px 14px 224px;
+}
 
 .tab button:hover {
   background-color: #ddd;
@@ -232,49 +239,34 @@ line-height: 22.5px;
 
 
 .tabcontent {
-
+margin: 0 5rem;
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
   text-align: left;
 }
-
 .skills__tab{
   display: flex;
   justify-content: center;
-  
+  margin: 2rem;
 }
 .meter {
   box-sizing: content-box;
-  height: 20px; /* Can be anything */
+  height: 9.76px;
+  margin: 1.5rem 0;
   position: relative;
-  margin: 60px 0 20px 0; /* Just for demo spacing */
-  background: #555;
-  border-radius: 25px;
-  padding: 10px;
-  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  background: #F8F7FC;
+
 }
 .meter > span {
   display: block;
   height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: rgb(43, 194, 83);
-  background-image: linear-gradient(
-    center bottom,
-    rgb(43, 194, 83) 37%,
-    rgb(84, 240, 84) 69%
-  );
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  background-color: #ABDAFC;
+
   position: relative;
   overflow: hidden;
 }
-.meter > span:after,
-.animate > span > span {
+.meter > span:after{
   content: "";
   position: absolute;
   top: 0;
@@ -301,9 +293,7 @@ line-height: 22.5px;
   overflow: hidden;
 }
 
-.animate > span:after {
-  display: none;
-}
+
 
 @keyframes move {
   0% {
@@ -315,14 +305,149 @@ line-height: 22.5px;
 }
 
 .orange > span {
-  background-image: linear-gradient(#f1a165, #f36d0a);
+  background-image: linear-gradient(#ABDAFC,#ABDAFC);
 }
 
-.red > span {
-  background-image: linear-gradient(#f0a3a3, #f42323);
-}
 
 .nostripes > span > span,
 .nostripes > span::after {
   background-image: none;
+}
+
+
+.skills__content{
+  width: 50%;
+
+}
+.skills__content h1{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.skills__content h2{
+  font-size:40px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.skills__content p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 60%;
+}
+.skills__content a{
+ text-decoration: none;
+ color: black ; 
+font-size: 20px ;
+line-height:60px;
+font-weight: 500;
+}
+.skills__meter{
+  width: 50%;
+}
+
+.skills_container h2{
+  font-size: 15px;
+line-height:22.5px;
+font-weight: 500;
+}
+
+
+/* Contact ME */
+
+.contact__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ABDAFC;
+margin: 0 14rem;
+position: relative;
+top: 10rem;
+}
+
+
+.contact{
+  background-color: white;
+  padding:2rem 14rem 2rem 6rem;
+text-align: center;
+position: relative;
+left: 7rem;
+}
+.contact h1{
+  font-size: 25px;
+  font-weight: 500;
+}
+.contact h3{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.contact button{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 1rem;
+background-color: white;
+border: none;
+box-shadow: 0px 0px 5px 0px black;
+padding: 16px 43px;
+cursor: pointer;
+}
+.contact__img{
+  width: 24%;
+position: relative;
+bottom: 2rem;
+right: 2rem;
+}
+
+/* footer */
+.footer__section{
+  padding-top:10rem;
+  background-color: #E5FCFF;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+padding: 5rem 8rem;
+padding-bottom: 2rem;
+}
+.footer__content h1{
+
+font-size: 30px;
+color: #5E5CDA;
+font-weight: 700;
+line-height: 45px;
+}
+.footer__content h3{
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+margin-bottom: 2rem;
+}
+.footer__links i{
+  font-size: 22.5px;
+margin-right: 29px;
+cursor: pointer;
+}
+.copy{
+font-size: 15px;
+font-weight: 500;
+  text-align: center;
+padding-bottom: 2rem;
+}
+
+
+
+/* ScrollBar  */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #E5FCFF;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ABDAFC;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
 }
