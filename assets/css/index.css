@@ -7,7 +7,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+button{
+  font-family: "Poppins", sans-serif;
+}
 .menu {
   position: fixed;
   display: block;
@@ -614,6 +616,14 @@ padding-bottom: 2rem;
   .home{
     flex-direction: column-reverse;
   }
+  .project__heading{
+    margin-left: 0;
+    text-align: center;
+  }
+  .section__subHeading{
+    margin-left: 0;
+    text-align: center;
+  }
   .tabcontent{
     padding: 0;
     margin: 0;
@@ -629,6 +639,9 @@ padding-bottom: 2rem;
   }
   .skills__content{
     width: 100%;
+  }
+  .skills__content p{
+      width: 100%;
   }
   .skills__meter{
     margin-top: 2rem;
@@ -657,5 +670,9 @@ padding-bottom: 2rem;
   .footer{
     padding: 0;
     flex-direction: column;
+    text-align: center;
+  }
+  .card{
+  margin: 1rem 2rem ; 
   }
 }
