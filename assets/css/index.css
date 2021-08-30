@@ -599,3 +599,63 @@ padding-bottom: 2rem;
 ::-webkit-scrollbar-thumb:hover {
   background-color: grey;
 }
+
+
+
+
+
+/* PhoneView */
+
+
+@media screen and (max-width:768px) {
+  .cards{
+    flex-wrap: wrap;
+  }
+  .home{
+    flex-direction: column-reverse;
+  }
+  .tabcontent{
+    padding: 0;
+    margin: 0;
+  }
+  .tab button{
+    width: 100%;
+  }
+  .tab1,.tab2{
+    padding: 0;
+  }
+  .skills__tab{
+    flex-wrap: wrap;
+  }
+  .skills__content{
+    width: 100%;
+  }
+  .skills__meter{
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .contact__container{
+    margin: 0;
+    top: 0;
+  }
+  .contact{
+    padding: 1rem;
+    left: 0;
+    background-color: #ABDAFC;
+  }
+  .contact__container{
+    flex-direction: column;
+  }
+  .contact__img{
+    bottom: 0;
+    right: 0;
+    display: none;
+  }
+  .footer__section{
+    padding: 0;
+  }
+  .footer{
+    padding: 0;
+    flex-direction: column;
+  }
+}
