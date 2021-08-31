@@ -615,6 +615,10 @@ padding-bottom: 2rem;
 
 
 @media screen and (max-width:768px) {
+  .uil-bars{
+    display: none;
+  }
+  
   .cards{
     flex-wrap: wrap;
   }
@@ -623,13 +627,13 @@ padding-bottom: 2rem;
     flex-direction: column-reverse;
   }
   .home__content h1{
-    font-size: 30px
+    font-size: 30px;
   }
   .home__content h3{
-    font-size: 20px
+    font-size: 20px;
   }
   .home__content h4{
-    font-size: 12px
+    font-size: 12px;
   }
   
   .project__heading{
