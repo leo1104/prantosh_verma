@@ -615,8 +615,12 @@ padding-bottom: 2rem;
 
 
 @media screen and (max-width:768px) {
+  header{
+    display: none;
+  }
   .uil-bars{
     display: none;
+    
   }
   
   .cards{
