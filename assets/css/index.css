@@ -173,6 +173,7 @@ font-weight: 300;
   width: 332px;
   margin: 0 2rem;
   padding: 2rem 0;
+  cursor:pointer;
 }
 .card img {
   width: 200px;
